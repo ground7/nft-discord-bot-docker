@@ -1,0 +1,12 @@
+services:
+  bot:
+    image: nftdiscordbotdocker:latest
+    env_file:
+    - .env
+    environment:
+      CONTRACT_ADDRESS: ${CONTRACT_ADDRESS}
+      DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
+      DISCORD_SALES_CHANNEL_ID: ${DISCORD_SALES_CHANNEL_ID}
+      DISCORD_TOKEN_COMMAND: ${DISCORD_TOKEN_COMMAND}
+      OPEN_SEA_API_KEY: ${OPEN_SEA_API_KEY}
+      OPEN_SEA_COLLECTION_NAME: ${OPEN_SEA_COLLECTION_NAME}
